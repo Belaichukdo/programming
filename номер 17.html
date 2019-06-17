@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>курсач+.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(0,0,255); }
+.s3 { color: rgb(0,128,128); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+курсач+.py</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">import </span><span class="s1">numpy </span><span class="s0">as </span><span class="s1">np 
+ 
+N = </span><span class="s2">4</span><span class="s1"> 
+M = </span><span class="s2">5</span><span class="s1"> 
+L = np.random.randint(</span><span class="s2">1</span><span class="s1">, </span><span class="s2">3</span><span class="s1">) 
+ 
+A = np.random.randint(low=-</span><span class="s2">9</span><span class="s1">, high=</span><span class="s2">10</span><span class="s1">, size=(N, M)) 
+print(</span><span class="s3">&quot;Матрица:</span><span class="s0">\r\n</span><span class="s3">{}</span><span class="s0">\n</span><span class="s3">&quot;</span><span class="s1">.format(A)) 
+ 
+a = np.random.randint(</span><span class="s2">0</span><span class="s1">, </span><span class="s2">10</span><span class="s1">, M) 
+print(</span><span class="s3">&quot;Допонлительная строка: &quot; </span><span class="s1">+ str(a)) 
+print(</span><span class="s3">&quot;</span><span class="s0">\n</span><span class="s3"> L = &quot; </span><span class="s1">+ str(L)) 
+ 
+row = np.random.randint(low=-</span><span class="s2">9</span><span class="s1">, high=</span><span class="s2">10</span><span class="s1">, size=M) 
+print(</span><span class="s3">&quot;Строка для вставки: {}&quot;</span><span class="s1">.format(row)) 
+A = np.insert(A, L, row, axis=</span><span class="s2">0</span><span class="s1">) 
+ 
+print(</span><span class="s3">&quot;Новая матрица:</span><span class="s0">\r\n</span><span class="s3">{}</span><span class="s0">\n</span><span class="s3">&quot;</span><span class="s1">.format(A)) 
+</span></pre>
+</body>
+</html>
